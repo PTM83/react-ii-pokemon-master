@@ -6,8 +6,18 @@ export const Home = () => {
     const { pokemonName } = PokemonComponent()
     return(
         <main className='pokemonMainHome'>
-            <h1>Esto es el Home</h1>
 
+            <picture className='ashPikachu'>
+                <img src="./src/images/ash-pikachu.png" alt='Ash with Pikachu'/>
+            </picture>
+
+            <div className='letterHome'>
+                <h1>Pokemon Master</h1>
+                <h2>Choose your Pokemon and Know his ability</h2>
+            </div>
+
+
+            <div className='selectHome'>
             <select className='selectPokemon'>
                 <option>Choose your Pokemon</option>
                 { pokemonName && pokemonName.map( pokemon => {
@@ -16,6 +26,9 @@ export const Home = () => {
                     return <option key={idPokemon} value={pokemon.name}> {pokemon.name} </option>;
                 })}
             </select>
+
+            <button>Push here</button>
+            </div>
 
         </main>
     )

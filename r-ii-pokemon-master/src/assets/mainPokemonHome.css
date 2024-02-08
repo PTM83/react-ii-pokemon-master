@@ -5,12 +5,72 @@
     --buttonColor: rgba(48,123,251,1);
     --screenColor: rgba(233, 233, 226, 1);
 }
-
+/*hiring fullstack developer*/
 .pokemonMainHome {
+    width:800px;
     height:100%;
     min-height: 60vh;
     grid-area: main;
     background-color:var(--screenColor);
-
     padding:1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,50%)
 }
+
+
+.ashPikachu img {
+    height:250px;
+    width:100%;
+}
+
+.letterHome {
+    text-align:center;
+    /* ... other styles ... */
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.letterHome h1 {
+    font-size:3rem;
+    padding-bottom:2rem;
+}
+
+.letterHome h2 {
+    font-size:1.5rem;
+}
+
+.selectHome {
+    text-align:center;
+    /* ... other styles ... */
+    grid-column-start: 2;
+    grid-column-end: -1;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    gap:0.4rem;
+}
+
+.selectHome .selectPokemon {
+    width:40%;
+    height:2rem;
+    text-align:center;
+    font-size:1.2rem;
+}
+
+.selectHome button {
+    width:40%;
+    height:2rem;
+    font-size:1.2rem;
+    background-color: rgba(5, 101, 101, 1);
+    color: rgba(233, 233, 226, 1);
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
+
+
+
+
