@@ -1,13 +1,13 @@
 import { PokemonComponent } from '../hooks/hooksPokemon.js'
 
 //Import CSS
-import '../assets/mainPokemon.css'
+import '../assets/mainPokemonPersonajes.css'
 
 export const MainPokemon = () => {
     const { pokemonName } = PokemonComponent()
 
     return (
-        <main className='pokemonMain'>
+        <main className='pokemonMainPersonaje'>
             <select className='selectPokemon'>
                     <option>Choose your Pokemon</option>
                 { pokemonName && pokemonName.map( pokemon => {
@@ -27,9 +27,6 @@ export const MainPokemon = () => {
                     <img src='../src/images/menu.png' alt='simular-altavoces'/>
                 </div>
             </div>
-
-
-
         </main>
     )
 }

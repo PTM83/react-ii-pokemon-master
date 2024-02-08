@@ -1,4 +1,11 @@
-import { MainPokemon } from './components/MainPokemon.jsx'
+import { Route, Routes } from 'react-router-dom'
+//Views
+import { Home } from './views/Home.jsx'
+import { Personajes } from './views/Personajes.jsx'
+//Components
+import { HeaderPokemon } from './components/HeaderPokemon.jsx'
+import { FooterPokemon } from './components/FooterPokemon.jsx'
+//CSS
 import './index.css'
 
 export const App = () => {
@@ -10,15 +17,14 @@ export const App = () => {
 
     return (
         <section className='container'>
-            <header>
-                <h1>Maestro Pokemon</h1>
-            </header>
+            <HeaderPokemon />
 
-            <MainPokemon />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/characters" element={<Personajes />} />
+            </Routes>
 
-            <footer>
-                <h2>Footer</h2>
-            </footer>
+            <FooterPokemon />
         </section>
     )
 }

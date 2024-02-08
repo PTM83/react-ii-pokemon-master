@@ -13,14 +13,11 @@ body {
     display:flex;
     justify-content:center;
     align-items:center;
-
-
-
 }
 
 .container {
     height:100%;
-    background-color:yellow;
+    background-color:dodgerBlue;
     border-radius: 0.5rem;
 
     display:grid;
@@ -34,10 +31,17 @@ body {
 
 header {
     grid-area:header;
+    width:800px;
+
+    display:flex;
+    flex-direction:row;
+    align-content:center;
+    justify-content:space-between;
+    padding:1rem;
 }
 
 header h1 {
-    font-size: 5rem;
+    font-size: 2rem;
 }
 
 footer {

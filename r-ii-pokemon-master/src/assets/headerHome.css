@@ -1,0 +1,25 @@
+
+nav .headerUl {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    width:15rem;
+    height:100%;
+    gap:1rem;
+}
+
+nav .headerUl li {
+    font-size:1.4rem;
+    list-style-type:none;
+}
+
+nav .headerUl li a {
+    text-decoration:none;
+}
+
+nav .headerUl li a.is-active {
+    font-weight:bold;
+    pointer-events:none;
+    color:red;
+}

@@ -7,7 +7,16 @@
     --screenColor: rgba(233, 233, 226, 1);
 }
 
-.pokemonMain {
+/*.pokemonMainHome {
+    height:100%;
+    min-height: 60vh;
+    grid-area: main;
+    background-color:var(--screenColor);
+
+    padding:1.5rem;
+}*/
+
+.pokemonMainPersonaje {
     height:100%;
     min-height: 60vh;
     grid-area: main;
