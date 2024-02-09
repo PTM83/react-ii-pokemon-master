@@ -47,8 +47,18 @@
     border:3px solid black;
     border-radius:1rem;
     padding:0.5rem;
+
+    display:flex;
+    flex-direction:row;
+
+    justify-content:space-between;
+    align-items:flex-start;
 }
 
+.mainScreen .bodyImage img {
+    height:15rem;
+    width:100%;
+}
 .buttonScreen {
     display:flex;
     flex-direction:row;

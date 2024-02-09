@@ -1,4 +1,7 @@
+import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
+//Context
+import { PokemonContext } from '../context/ContextPokemon.jsx'
 
 import { NavLinkPokemon } from '../components/NavLinkPokemon.jsx'
 
@@ -6,6 +9,9 @@ import { NavLinkPokemon } from '../components/NavLinkPokemon.jsx'
 import '../assets/headerHome.css'
 
 export const HeaderPokemon = () => {
+
+    const { pokemonDetails } = useContext(PokemonContext)
+
     return (
         <header>
             <h1>Maestro Pokemon</h1>
@@ -17,7 +23,7 @@ export const HeaderPokemon = () => {
                         </NavLinkPokemon>
                     </li>
                     <li>
-                        <NavLinkPokemon to='/characters'>
+                        <NavLinkPokemon to={`/characters/${pokemonDetails.id}`}>
                             Characters
                         </NavLinkPokemon>
                     </li>

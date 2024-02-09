@@ -18,12 +18,10 @@ export const App = () => {
     return (
         <section className='container'>
             <HeaderPokemon />
-
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/characters" element={<Personajes />} />
-            </Routes>
-
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/characters/:id" element={<Personajes />} />
+                </Routes>
             <FooterPokemon />
         </section>
     )
