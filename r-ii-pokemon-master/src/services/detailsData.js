@@ -1,9 +1,11 @@
+import rocketTeamImage from '../images/rocket-team.png'
 export const initialDetails = {
+    name: "Team Rocket",
     id: 0,
       sprites: {
         other: {
           'dream_world': {
-            'front_default': '../src/images/rocket-team.png',
+            'front_default': rocketTeamImage,
           },
         },
       },
@@ -48,9 +50,9 @@ export const initialDetails = {
 "types": [
     {
         "type": {
-            "name": "grass",
+            "name": "Rocket",
         }
     }
 ],
 "weight": 1000
-    }
+}

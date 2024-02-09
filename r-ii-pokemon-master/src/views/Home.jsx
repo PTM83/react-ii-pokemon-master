@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom'
 import { PokemonContext } from '../context/ContextPokemon.jsx'
 //CSS
 import '../assets/mainPokemonHome.css'
+//Imagen
+import AshPikachu from '../images/ash-pikachu.png'
 
 export const Home = () => {
-
-
 
     const { pokemonName, detailsPokemon, pokemonDetails } = useContext(PokemonContext)
 //     const { pokemonName } = PokemonComponent()
@@ -35,7 +35,7 @@ export const Home = () => {
         <main className='pokemonMainHome'>
 
             <picture className='ashPikachu'>
-                <img src="./src/images/ash-pikachu.png" alt='Ash with Pikachu'/>
+                <img src={AshPikachu} alt='Ash with Pikachu'/>
             </picture>
 
             <div className='letterHome'>
