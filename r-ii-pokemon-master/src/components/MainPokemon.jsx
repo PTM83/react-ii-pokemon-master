@@ -26,14 +26,13 @@ export const MainPokemon = () => {
                 <div className='mainScreen'>
                     <picture className='bodyImage'>
                         <img src={pokemonDetails.sprites.other.dream_world.front_default} alt='Equipo Rocket' />
+                        <h3>Type of Pokemon {pokemonDetails.types[0].type.name}</h3>
                     </picture>
                     <div>
                         <h1>{pokemonDetails.name}</h1>
-                        <h2> Personaje Id {id} </h2>
-                        <h3>Type of Pokemon {pokemonDetails.types[0].type.name}</h3>
+                        <TableDetails />
                     </div>
 
-                    <TableDetails />
 
                 </div>
 
